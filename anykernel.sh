@@ -4,24 +4,31 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=ExampleKernel by osm0sis @ xda-developers
+kernel.string=IceKernel @ xda-developers
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=maguro
-device.name2=toro
-device.name3=toroplus
-device.name4=tuna
-device.name5=
-supported.versions=
+device.name1=OnePlus7
+device.name2=guacamoleb
+device.name3=OnePlus7Pro
+device.name4=guacamole
+device.name5=OnePlus7ProTMO
+device.name6=guacamolet
+device.name7=OnePlus7T
+device.name8=hotdogb
+device.name9=OnePlus7TPro
+device.name10=hotdog
+device.name11=OnePlus7TProNR
+device.name12=hotdogg
+supported.versions=11
 supported.patchlevels=
 '; } # end properties
 
 # shell variables
-block=/dev/block/platform/omap/omap_hsmmc.0/by-name/boot;
-is_slot_device=0;
+block=/dev/block/by-name/boot;
+is_slot_device=1;
 ramdisk_compression=auto;
 
 ## AnyKernel methods (DO NOT CHANGE)

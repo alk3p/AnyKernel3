@@ -35,6 +35,11 @@ ramdisk_compression=auto;
 # import patching functions/variables - see for reference
 . tools/ak3-core.sh;
 
+# Block non-stock ROMs
+if [ ! -e /system/etc/buildinfo/oem_build.prop ]; then
+  ui_print " " "Incompatible ROM detected! Aborting..."; exit 1;
+fi
+
 ## AnyKernel file attributes
 # set permissions/ownership for included ramdisk files
 set_perm_recursive 0 0 755 644 $ramdisk/*;

@@ -9,13 +9,12 @@ split_img=$home/split_img;
 # begin properties
 properties() { '
 kernel.string=HiiraKernel @ xda-developers
-do.devicecheck=1
+do.devicecheck=0
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=lmi
-device.name2=lmipro
+device.name1=
 supported.versions=11
 supported.patchlevels=
 '; } # end properties
